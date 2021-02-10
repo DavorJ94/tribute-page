@@ -35,7 +35,7 @@
   margin-right: 15px;
 }
 
-.content {
+.content__title {
   font-weight: bold;
   text-align: center;
   padding: 24px;
@@ -55,7 +55,8 @@
   color: 0.333;
 }
 
-.hhh {
+.content__citation,
+.content__author {
   position: relative;
   left: 340px;
   font-size: 17px;
@@ -74,11 +75,11 @@
   text-align: center;
 }
 
-.tribute-link:active {
+.footer__tribute-link:active {
   color: green;
 }
 
-.sdsd .tooltiptext {
+.footer__link .tooltiptext {
   line-height: 1;
   font-size: 16px;
   width: 150px;
@@ -96,8 +97,8 @@
   transition: opacity 1s;
 }
 
-.sdsd:hover .tooltiptext {
-  color: 0.888;
+.footer__link:hover .tooltiptext {
+  color: white;
   visibility: visible;
   opacity: 1;
 }
