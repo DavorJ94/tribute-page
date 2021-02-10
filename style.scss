@@ -1,57 +1,61 @@
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+}
+
 .heading {
-  display: block;
-  background-color: #eee;
-  position: relative;
+  background-color: rgb(230, 230, 230);
   text-align: center;
-  padding: 20px;
+  padding: 2em;
 
   &__title {
-    font-size: 38px;
+    font-size: 4rem;
     font-weight: bold;
   }
 
   &__subtitle {
-    font-size: 18px;
-    color: 0.424242;
+    font-size: 2rem;
   }
 }
 
 .image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-left: 100px solid;
-  border-right: 100px solid;
-  border-color: white;
-  max-width: 100%;
+  margin: 0 auto;
+  max-height: 400px;
+  max-width: 80%;
 
   &__caption {
     text-align: center;
-    line-height: 3;
-    display: block;
-    background-color: white;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0.5em auto;
+    max-width: 75%;
+    font-style: italic;
   }
 }
+.content {
+  margin: 0 auto;
+  width: 900px;
+  max-width: 90%;
 
-.content__title {
-  font-weight: bold;
-  text-align: center;
-  padding: 24px;
-  font-size: 21px;
-  color: 0.333;
-}
+  &__title {
+    font-weight: bold;
+    text-align: center;
+    padding: 24px;
+    font-size: 21px;
+    color: 0.333;
+  }
 
-.content__unordered-list {
-  position: relative;
-  left: 320px;
-  font-size: 17px;
-  line-height: 2.5;
-  width: 600px;
-  text-decoration: align;
-  text-align: justify;
-  color: 0.333;
+  &__unordered-list {
+    position: relative;
+    left: 320px;
+    font-size: 17px;
+    line-height: 2.5;
+    width: 600px;
+    text-decoration: align;
+    text-align: justify;
+    color: 0.333;
+  }
 }
 
 .content__citation,

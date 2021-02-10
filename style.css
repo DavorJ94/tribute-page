@@ -1,38 +1,44 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
 .heading {
-  display: block;
-  background-color: #eee;
-  position: relative;
+  background-color: #e6e6e6;
   text-align: center;
-  padding: 20px;
+  padding: 2em;
 }
 
 .heading__title {
-  font-size: 38px;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .heading__subtitle {
-  font-size: 18px;
-  color: 0.424242;
+  font-size: 2rem;
 }
 
 .image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-left: 100px solid;
-  border-right: 100px solid;
-  border-color: white;
-  max-width: 100%;
+  margin: 0 auto;
+  max-height: 400px;
+  max-width: 80%;
 }
 
 .image__caption {
   text-align: center;
-  line-height: 3;
-  display: block;
-  background-color: white;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0.5em auto;
+  max-width: 75%;
+  font-style: italic;
+}
+
+.content {
+  margin: 0 auto;
+  width: 900px;
+  max-width: 90%;
 }
 
 .content__title {
