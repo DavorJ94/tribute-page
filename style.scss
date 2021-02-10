@@ -3,6 +3,7 @@ html {
 }
 body {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .heading {
@@ -12,7 +13,7 @@ body {
 
   &__title {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 700;
   }
 
   &__subtitle {
@@ -42,7 +43,7 @@ body {
   max-width: 80%;
 
   &__title {
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     font-size: 2.3rem;
   }
@@ -79,14 +80,14 @@ body {
   max-width: 80%;
   margin: 2em auto;
   font-size: 1.7rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: justify;
   line-height: 1.4;
   &__tribute-link {
     color: rgb(0, 153, 255);
     &:active,
     &:hover {
-      font-weight: bold;
+      font-weight: 700;
       color: blue;
     }
   }
@@ -98,10 +99,10 @@ body {
   background-color: black;
   color: white;
   border-radius: 15px;
-  padding: 0.5em 0.5em;
+  padding: 0.5em 1em;
   opacity: 0;
   transition: opacity 0.5s;
 }
 .footer__tribute-link:hover + .tooltiptext {
-  opacity: 1;
+  opacity: 0.7;
 }

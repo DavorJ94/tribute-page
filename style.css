@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .heading {
@@ -14,7 +15,7 @@ body {
 
 .heading__title {
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .heading__subtitle {
@@ -45,7 +46,7 @@ body {
 }
 
 .content__title {
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   font-size: 2.3rem;
 }
@@ -83,7 +84,7 @@ body {
   max-width: 80%;
   margin: 2em auto;
   font-size: 1.7rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: justify;
   line-height: 1.4;
 }
@@ -93,7 +94,7 @@ body {
 }
 
 .footer__tribute-link:active, .footer__tribute-link:hover {
-  font-weight: bold;
+  font-weight: 700;
   color: blue;
 }
 
@@ -103,13 +104,13 @@ body {
   background-color: black;
   color: white;
   border-radius: 15px;
-  padding: 0.5em 0.5em;
+  padding: 0.5em 1em;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
 .footer__tribute-link:hover + .tooltiptext {
-  opacity: 1;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
