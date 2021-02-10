@@ -83,6 +83,19 @@ body {
   font-weight: 700;
   text-align: justify;
   line-height: 1.4;
+
+  &__tooltiptext {
+    position: relative;
+    font-size: 1.2rem;
+    overflow: visible;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 0.5em 1em;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
   &__tribute-link {
     color: rgb(0, 153, 255);
     &:active,
@@ -90,19 +103,15 @@ body {
       font-weight: 700;
       color: blue;
     }
+
+    &:hover + .footer__tooltiptext {
+      opacity: 0.7;
+    }
   }
 }
 
-.tooltiptext {
-  position: relative;
-  font-size: 1.2rem;
-  background-color: black;
-  color: white;
-  border-radius: 15px;
-  padding: 0.5em 1em;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.footer__tribute-link:hover + .tooltiptext {
-  opacity: 0.7;
+@media (max-width: 700px) {
+  .footer__tribute-link:hover + .footer__tooltiptext {
+    opacity: 0;
+  }
 }

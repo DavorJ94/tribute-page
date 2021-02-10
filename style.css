@@ -89,18 +89,10 @@ body {
   line-height: 1.4;
 }
 
-.footer__tribute-link {
-  color: #0099ff;
-}
-
-.footer__tribute-link:active, .footer__tribute-link:hover {
-  font-weight: 700;
-  color: blue;
-}
-
-.tooltiptext {
+.footer__tooltiptext {
   position: relative;
   font-size: 1.2rem;
+  overflow: visible;
   background-color: black;
   color: white;
   border-radius: 15px;
@@ -110,7 +102,22 @@ body {
   transition: opacity 0.5s;
 }
 
-.footer__tribute-link:hover + .tooltiptext {
+.footer__tribute-link {
+  color: #0099ff;
+}
+
+.footer__tribute-link:active, .footer__tribute-link:hover {
+  font-weight: 700;
+  color: blue;
+}
+
+.footer__tribute-link:hover + .footer__tooltiptext {
   opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  .footer__tribute-link:hover + .footer__tooltiptext {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
