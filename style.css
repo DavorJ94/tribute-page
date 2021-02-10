@@ -40,7 +40,7 @@ body {
 
 .content {
   margin: 0 auto;
-  width: 900px;
+  width: 600px;
   max-width: 80%;
 }
 
@@ -66,48 +66,50 @@ body {
           hyphens: auto;
 }
 
-.content__citation,
-.content__author {
-  font-size: 1.5rem;
-  margin-top: 2em;
-  -webkit-text-decoration: align;
-          text-decoration: align;
+.content__citation {
+  font-size: 1.3rem;
+  letter-spacing: 1.4;
   text-align: justify;
+  margin-top: 2em;
+  font-style: italic;
+}
+
+.content__author {
+  text-align: end;
 }
 
 .footer {
-  line-height: 4;
-  font-size: 20px;
+  width: 600px;
+  max-width: 80%;
+  margin: 2em auto;
+  font-size: 1.7rem;
   font-weight: bold;
-  color: 0.333;
-  text-align: center;
+  text-align: justify;
+  line-height: 1.4;
 }
 
-.footer__tribute-link:active {
-  color: green;
+.footer__tribute-link {
+  color: #0099ff;
 }
 
-.footer__link .tooltiptext {
-  line-height: 1;
-  font-size: 16px;
-  width: 150px;
+.footer__tribute-link:active, .footer__tribute-link:hover {
+  font-weight: bold;
+  color: blue;
+}
+
+.tooltiptext {
   position: relative;
-  bottom: 30px;
-  right: 90px;
-  visibility: hidden;
+  font-size: 1.2rem;
   background-color: black;
-  color: 0.747;
-  text-align: center;
-  border-radius: 8px;
-  padding: 5px 0;
+  color: white;
+  border-radius: 15px;
+  padding: 0.5em 0.5em;
   opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
-.footer__link:hover .tooltiptext {
-  color: white;
-  visibility: visible;
+.footer__tribute-link:hover + .tooltiptext {
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

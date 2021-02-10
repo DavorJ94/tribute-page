@@ -38,7 +38,7 @@ body {
 }
 .content {
   margin: 0 auto;
-  width: 900px;
+  width: 600px;
   max-width: 80%;
 
   &__title {
@@ -60,44 +60,48 @@ body {
       hyphens: auto;
     }
   }
+
+  &__citation {
+    font-size: 1.3rem;
+    letter-spacing: 1.4;
+    text-align: justify;
+    margin-top: 2em;
+    font-style: italic;
+  }
+
+  &__author {
+    text-align: end;
+  }
 }
 
-.content__citation,
-.content__author {
-  font-size: 1.5rem;
-  margin-top: 2em;
-  text-decoration: align;
-  text-align: justify;
-}
 .footer {
-  line-height: 4;
-  font-size: 20px;
+  width: 600px;
+  max-width: 80%;
+  margin: 2em auto;
+  font-size: 1.7rem;
   font-weight: bold;
-  color: 0.333;
-  text-align: center;
-}
-.footer__tribute-link:active {
-  color: green;
+  text-align: justify;
+  line-height: 1.4;
+  &__tribute-link {
+    color: rgb(0, 153, 255);
+    &:active,
+    &:hover {
+      font-weight: bold;
+      color: blue;
+    }
+  }
 }
 
-.footer__link .tooltiptext {
-  line-height: 1;
-  font-size: 16px;
-  width: 150px;
+.tooltiptext {
   position: relative;
-  bottom: 30px;
-  right: 90px;
-  visibility: hidden;
+  font-size: 1.2rem;
   background-color: black;
-  color: 0.747;
-  text-align: center;
-  border-radius: 8px;
-  padding: 5px 0;
-  opacity: 0;
-  transition: opacity 1s;
-}
-.footer__link:hover .tooltiptext {
   color: white;
-  visibility: visible;
+  border-radius: 15px;
+  padding: 0.5em 0.5em;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.footer__tribute-link:hover + .tooltiptext {
   opacity: 1;
 }
