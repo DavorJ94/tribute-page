@@ -23,50 +23,51 @@ body {
 .image {
   display: block;
   margin: 0 auto;
-  max-height: 400px;
+  max-height: 600px;
   max-width: 80%;
+  padding: 0;
 
   &__caption {
     text-align: center;
     margin: 0.5em auto;
     max-width: 75%;
     font-style: italic;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
   }
 }
 .content {
   margin: 0 auto;
   width: 900px;
-  max-width: 90%;
+  max-width: 80%;
 
   &__title {
     font-weight: bold;
     text-align: center;
-    padding: 24px;
-    font-size: 21px;
-    color: 0.333;
+    font-size: 2.3rem;
   }
 
   &__unordered-list {
-    position: relative;
-    left: 320px;
-    font-size: 17px;
-    line-height: 2.5;
-    width: 600px;
-    text-decoration: align;
-    text-align: justify;
-    color: 0.333;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+
+    & li {
+      margin-top: 1em;
+      list-style-position: inside;
+      text-align: justify;
+      hyphens: auto;
+    }
   }
 }
 
 .content__citation,
 .content__author {
-  position: relative;
-  left: 340px;
-  font-size: 17px;
-  width: 600px;
+  font-size: 1.5rem;
+  margin-top: 2em;
   text-decoration: align;
   text-align: justify;
-  color: 0.333;
 }
 .footer {
   line-height: 4;

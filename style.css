@@ -24,8 +24,9 @@ body {
 .image {
   display: block;
   margin: 0 auto;
-  max-height: 400px;
+  max-height: 600px;
   max-width: 80%;
+  padding: 0;
 }
 
 .image__caption {
@@ -33,44 +34,45 @@ body {
   margin: 0.5em auto;
   max-width: 75%;
   font-style: italic;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
 }
 
 .content {
   margin: 0 auto;
   width: 900px;
-  max-width: 90%;
+  max-width: 80%;
 }
 
 .content__title {
   font-weight: bold;
   text-align: center;
-  padding: 24px;
-  font-size: 21px;
-  color: 0.333;
+  font-size: 2.3rem;
 }
 
 .content__unordered-list {
-  position: relative;
-  left: 320px;
-  font-size: 17px;
-  line-height: 2.5;
-  width: 600px;
-  -webkit-text-decoration: align;
-          text-decoration: align;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.content__unordered-list li {
+  margin-top: 1em;
+  list-style-position: inside;
   text-align: justify;
-  color: 0.333;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .content__citation,
 .content__author {
-  position: relative;
-  left: 340px;
-  font-size: 17px;
-  width: 600px;
+  font-size: 1.5rem;
+  margin-top: 2em;
   -webkit-text-decoration: align;
           text-decoration: align;
   text-align: justify;
-  color: 0.333;
 }
 
 .footer {
