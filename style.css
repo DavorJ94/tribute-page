@@ -1,0 +1,98 @@
+#main {
+  background-color: #eee;
+}
+#first {
+  display: block;
+  background-color: #eee;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+#title {
+  color: #333;
+  font-size: 38px;
+  font-weight: bold;
+}
+#ss {
+  font-size: 18px;
+  color: #424242;
+}
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 100px solid;
+  border-right: 100px solid;
+  border-color: white;
+  max-width: 100%;
+}
+#img-caption {
+  text-align: center;
+  line-height: 3;
+  display: block;
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-down: 100px;
+}
+#tribute-info {
+  font-weight: bold;
+  text-align: center;
+  padding: 24px;
+  font-size: 21px;
+  color: #333;
+}
+#ull {
+  position: relative;
+  left: 320px;
+  font-size: 17px;
+  line-height: 2.5;
+  width: 600px;
+  text-decoration: align;
+  text-align: justify;
+  color: #333;
+}
+#tml {
+  background-color: #eee;
+}
+.hhh {
+  position: relative;
+  left: 340px;
+  font-size: 17px;
+  width: 600px;
+  text-decoration: align;
+  text-align: justify;
+  color: #333;
+}
+.footer {
+  line-height: 4;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+#tribute-link:active {
+  color: green;
+}
+
+.sdsd .tooltiptext {
+  line-height: 1;
+  font-size: 16px;
+  width: 150px;
+  position: relative;
+  bottom: 30px;
+  right: 90px;
+  visibility: hidden;
+  background-color: black;
+  color: #747;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.sdsd:hover .tooltiptext {
+  color: #888;
+  visibility: visible;
+  opacity: 1;
+}
